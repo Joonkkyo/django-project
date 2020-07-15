@@ -19,16 +19,102 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2550a509-558e-415b-98a0-5f06157f4701" name="Default Changelist" comment="bookmark website">
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/post_all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/post_archive.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/post_archive_day.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/post_archive_month.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/post_archive_year.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmark/urls.py" afterDir="false" />
+    <list default="true" id="2550a509-558e-415b-98a0-5f06157f4701" name="Default Changelist" comment="blog website">
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0002_auto_20200715_1543.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/taggit/taggit_cloud.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/taggit/taggit_post_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/clean-blog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/clean-blog.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/about-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/contact-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/home-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/post-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/post-sample-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/clean-blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/clean-blog.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/contact_me.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jqBootstrapValidation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/_bootstrap-overrides.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/_contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/_global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/_masthead.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/_post.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scss/clean-blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/brands.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/fontawesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/regular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/regular.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/solid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/solid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/svg-with-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/svg-with-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/v4-shims.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/css/v4-shims.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_archive.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_archive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_archive_day.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_archive_day.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_archive_month.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_archive_month.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_archive_year.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_archive_year.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmark/templates/bookmark/bookmark_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/bookmark/templates/bookmark/bookmark_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
     </list>
@@ -62,6 +148,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -110,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594705356879</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="blog website">
+      <created>1594713864199</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594713864199</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,48 +217,51 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="bookmark website" />
-    <option name="LAST_COMMIT_MESSAGE" value="bookmark website" />
+    <MESSAGE value="blog website" />
+    <option name="LAST_COMMIT_MESSAGE" value="blog website" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594695383209">
+    <state x="148" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594795945047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594695383209" />
+    <state x="148" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594795945047" />
     <state x="518" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594705843203">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="518" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1594705843203" />
-    <state x="630" y="188" key="FileChooserDialogImpl" timestamp="1594695380553">
+    <state x="630" y="188" key="FileChooserDialogImpl" timestamp="1594794761490">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="630" y="188" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594695380553" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1594706977032">
+    <state x="630" y="188" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594794761490" />
+    <state width="757" height="187" key="GridCell.Tab.0.bottom" timestamp="1594797970941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594706977032" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1594706977032">
+    <state width="757" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594797970941" />
+    <state width="757" height="187" key="GridCell.Tab.0.center" timestamp="1594797970941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594706977032" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1594706977032">
+    <state width="757" height="187" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594797970941" />
+    <state width="757" height="187" key="GridCell.Tab.0.left" timestamp="1594797970941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594706977032" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1594706977032">
+    <state width="757" height="187" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594797970941" />
+    <state width="757" height="187" key="GridCell.Tab.0.right" timestamp="1594797970941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594706977032" />
-    <state x="359" y="78" key="SettingsEditor" timestamp="1594694840386">
+    <state width="757" height="187" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594797970941" />
+    <state x="74" y="19" key="SettingsEditor" timestamp="1594795954356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="359" y="78" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594694840386" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1594713737498">
+    <state x="74" y="19" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594795954356" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1594713874981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1594713737498" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1594713874981" />
     <state x="571" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594705588812">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
