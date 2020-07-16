@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} logged_out.html {% endblock %}
+
+{% block header %}
+  <header class="masthead" style="background-image: url({% static 'img/home-bg.jpg' %})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Clean Blog</h1>
+            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+{% endblock %}
+
+{% block content %}
+<h1>Logged out</h1>
+<br>
+
+<div>
+    <i class="fas fa-quote-left"></i>
+    <span class="h6">&ensp;Thanks for spending your quality time with this website today.&ensp';</span>
+    <i class="fas fa-quote-right"></i>
+</div>
+
+<p class="font-italic"><a href="{% url 'login' %}">Log in again</a></p>
+{% endblock %}
+
+{% block extra-script %}{% endblock %}
