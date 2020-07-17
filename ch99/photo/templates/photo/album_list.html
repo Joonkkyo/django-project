@@ -52,6 +52,13 @@ thumbnail {
         {% endfor %}
     </div>
     {% endfor %}
+
+    <div class="row justify-content-end">
+        <div class="col-4">
+            <a class="btn btn-light" href="{% url 'photo:photo_add' %}">Add</a>
+            <a class="btn btn-light" href="{% url 'photo:photo_change' %}">Change</a>
+        </div>
+    </div>
 {% endblock %}
 
 {% block extra-script %}{% endblock %}
