@@ -3,7 +3,7 @@
 {% load static %}
 {% load widget_tweaks %}
 
-{% block title %} register.html {% endblock %}
+{% block title %} bookmark_form.html {% endblock %}
 
 {% block header %}
   <header class="masthead" style="background-image: url({% static 'img/home-bg.jpg' %})">
@@ -22,8 +22,8 @@
 {% endblock %}
 
 {% block content %}
-<h1>New User Regisration</h1>
-<p class="font-italic">Please enter your username and password twice.</p>
+<h1>Bookmark Create/Update - {{user}}</h1>
+<p class="font-italic">This is a creation or update form for your bookmark.</p>
 
 {% if form.errors %}
 <div class="alert alert-danger">
@@ -34,27 +34,22 @@
 
 <form action="." method="post" class="card pt-3">{% csrf_token %}
     <div class="form-group row">
-        {{ form.username|add_label_class:"col-form-label col-sm-3 ml-3 font-weight-bold" }}
+        {{ form.title|add_label_class:"col-form-label col-sm-2 ml-3 font-weight-bold" }}
         <div class="col-sm-5">
-            {{ form.username|add_class:"form-control"|attr:"autofocus" }}
+            {{ form.title|add_class:"form-control"|attr:"autofocus" }}
         </div>
     </div>
-    <div class="from-group row">
-        {{ form.password1|add_label_class:"col-form-label col-sm-3 ml-3 font-weight-bold" }}
-        <div class="col-sm-5">
-            {{ form.password1|add_class:"form-control" }}
-        </div>
-    </div>
+
     <div class="form-group row">
-        {{ form.password2|add_label_class:"col-form-label col-sm-3 ml-3 font-weight-bold" }}
+        {{ form.url|add_label_class:"col-form-label col-sm-2 ml-3 font-weight-bold" }}
         <div class="col-sm-5">
-            {{ form.password2|add_class:"form-control" }}
+            {{ form.url|add_class:"form-control" }}
         </div>
     </div>
 
     <div class="form-group">
-        <div class="offset-sm-3 col-sm-5">
-            <input type="submit" value="Register" class="btn btn-info"/>
+        <div class="offset-sm-2 col-sm-5">
+            <input type="submit" value="Submit" class="btn btn-info"/>
         </div>
     </div>
 </form>

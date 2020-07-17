@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} post_confirm_delete.html {% endblock %}
+
+{% block header %}
+  <header class="masthead" style="background-image: url({% static 'img/home-bg.jpg' %})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Clean Blog</h1>
+            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+{% endblock %}
+
+{% block content %}
+<h1>Post Delete</h1>
+<br>
+
+<form action="." method="post">{% csrf_token %}
+    <p>Are you sure you want to delete "{{ object }}" ?</p>
+    <input type="submit" value="Confirm" class="btn btn-danger btn-sm" />
+</form>
+{% endblock %}
+
+{% block extra-script %}{% endblock %}

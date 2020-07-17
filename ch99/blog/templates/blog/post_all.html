@@ -46,10 +46,15 @@
     </span>
 </div>
 </center>
+<div class="row justify-content-end">
+    <div class="col-4">
+        <a class="btn btn-light" href="{% url 'blog:add' %}">Add</a>
+        <a class="btn btn-light" href="{% url 'blog:change' %}">Change</a>
+    </div>
+</div>
 {% endblock %}
 
 {% block extra-script %}{% endblock %}
-
 
 
 

@@ -21,14 +21,23 @@
 {% endblock %}
 
 {% block content %}
+<center>
 <div id="content">
     <h1>Bookmark List</h1>
-    <ul>
+    <ul class="ml-auto mr-auto">
         {%for bookmark in object_list%}
             <li><a href="{% url 'bookmark:detail' bookmark.id %}">{{ bookmark }}</a></li>
         {% endfor %}
     </ul>
 </div>
+</center>
+<div class="row justify-content-end">
+    <div class="col-4">
+        <a class="btn btn-light" href="{% url 'bookmark:add' %}">Add</a>
+        <a class="btn btn-light" href="{% url 'bookmark:change' %}">Change</a>
+    </div>
+</div>
+
 {% endblock %}
 
 {% block extra-script %}{% endblock %}
