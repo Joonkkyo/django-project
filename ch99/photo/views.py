@@ -8,14 +8,18 @@ from django.views.generic import CreateView, UpdateView, DeleteView
 from mysite.views import OwnerOnlyMixin
 from photo.forms import PhotoInlineFormSet
 
+
 class AlbumLV(ListView):
     model = Album
+
 
 class AlbumDV(DetailView):
     model = Album
 
+
 class PhotoDV(DetailView):
     model = Photo
+
 
 class PhotoCV(LoginRequiredMixin, CreateView):
     model = Photo
@@ -26,6 +30,7 @@ class PhotoCV(LoginRequiredMixin, CreateView):
         form.instance.owner = self.request.user
         return super().form_valid(form)
 
+
 class PhotoChangeLV(LoginRequiredMixin, ListView):
     model = Photo
     template_name = 'photo/photo_change_list.html'
@@ -33,14 +38,17 @@ class PhotoChangeLV(LoginRequiredMixin, ListView):
     def get_queryset(self):
         return Photo.objects.filter(owner=self.request.user)
 
+
 class PhotoUV(OwnerOnlyMixin, UpdateView):
     model = Photo
     fields = ('album', 'title', 'image', 'description')
     success_url = reverse_lazy('photo:index')
 
+
 class PhotoDelV(OwnerOnlyMixin, DeleteView):
     model = Photo
     success_url = reverse_lazy('photo:index')
+
 
 class AlbumChangeLV(LoginRequiredMixin, ListView):
     model = Album
@@ -49,9 +57,11 @@ class AlbumChangeLV(LoginRequiredMixin, ListView):
     def get_queryset(self):
         return Album.objects.filter(owner=self.request.user)
 
+
 class AlbumDelV(OwnerOnlyMixin, DeleteView):
     model = Album
     success_url = reverse_lazy('photo:index')
+
 
 class AlbumPhotoCV(LoginRequiredMixin, CreateView):
     model = Album
@@ -64,7 +74,8 @@ class AlbumPhotoCV(LoginRequiredMixin, CreateView):
             context['formset'] = PhotoInlineFormSet(self.request.POST, self.request.FILES)
 
         else:
-            context['formset'] = PhotoInlineFormSet
+            context['formset'] = PhotoInlineFormSet()
+        return context
 
     def form_valid(self, form):
         form.instance.owner = self.request.user
@@ -79,6 +90,7 @@ class AlbumPhotoCV(LoginRequiredMixin, CreateView):
             return redirect(self.get_success_url())
         else:
             return self.render_to_response(self.get_context_data(form=form))
+
 
 class AlbumPhotoUV(OwnerOnlyMixin, UpdateView):
     model = Album

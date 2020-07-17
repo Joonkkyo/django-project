@@ -1,16 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Django Bookmark Detail</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-<div id="content">
-    <h1>{{ object.title }}</h1>
+{% load static %}
 
-    <u1>
-        <li>URL: <a href="{{ object.url }}">{{ object.url }}</a></li>
-    </u1>
-</div>
-</body>
-</html>
+{% block title %} home.html {% endblock %}
+
+{% block header %}
+  <header class="masthead" style="background-image: url({% static 'img/home-bg.jpg' %})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Clean Blog</h1>
+            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+{% endblock %}
+
+{% block content %}
+<center>
+    <head>
+        <title>Django Bookmark Detail</title>
+    </head>
+
+    <div id="content">
+        <h1>{{ object.title }}</h1>
+
+        <u1>
+            <li>URL: <a href="{{ object.url }}">{{ object.url }}</a></li>
+        </u1>
+    </div>
+</center>
+{% endblock %}
+{% block extra-script %}{% endblock %}
+
+
+
+
+
